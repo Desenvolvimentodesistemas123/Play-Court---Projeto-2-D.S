@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e7e7e7;
+}
+#navBar {
+  width: 100%;
+  min-height: 80px;
+
+  background-color: #214cce;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0 30px;
+}
+
+#logoNav {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circuloLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circuloExtremidade:hover {
+  cursor: pointer;
+}
+
+#imgLogo {
+  width: 75px;
+  height: 75px;
+}
+
+#itensNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.txtLink {
+  margin: -6px 0 0;
+}
+
+.linkNav {
+  color: #ffffff;
+
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkNav:hover {
+  color: #f8d000;
+}
+
+.icon {
+  color: #f8d000;
+  font-size: 27px;
+
+  transition: all 0.3s ease;
+}
+
+.linkNav:hover .icon {
+  color: #ffffff;
+}
+
+.divisaoNav {
+  width: 35%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navDireitaAssociar {
+  background-color: transparent;
+}
+
+#navDireita {
+  background-color: transparent;
+
+  width: 440px;
+}
+
+#navDireitaAssociado {
+  width: 120px;
+}
+
+#espaco {
+  width: 370px;
+  height: 30px;
+
+  margin: 0 0 0 0;
+
+  background-color: transparent;
+}
+
+#espacoAssociar {
+  width: 160px;
+  height: 30px;
+
+  background-color: transparent;
+}
+
+#espacoAssociado {
+  width: 760px;
+  height: 30px;
+
+  background-color: transparent;
+}
+
+#containerPesquisaAssociado {
+  display: none;
+}
+
+.caixaAberta {
+  background-color: #ffffff;
+
+  border-radius: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoAberto {
+  background-color: #ffffff;
+
+  width: 300px;
+  height: 40px;
+
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.botaoAbertoAssociar {
+  background-color: #ffffff;
+
+  width: 240px;
+  height: 40px;
+
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#botaoAbrirPesquisa:hover {
+  cursor: pointer;
+}
+
+#iconLupa {
+  color: #214cce;
+
+  margin: 6px 0 0 2px;
+
+  font-size: 22px;
+
+  transition: all 0.2s ease;
+}
+
+.botaoAberto #iconLupa {
+  margin: 6px 0 0 10px;
+}
+
+.botaoAbertoAssociar #iconLupa {
+  margin: 6px 0 0 10px;
+}
+
+#caixaPesquisa {
+  background-color: transparent;
+
+  width: 90%;
+  margin: 0 10px 0;
+}
+
+#inputCaixaPesquisa {
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+
+  color: #5f5f5f;
+  font-size: 16px;
+
+  padding: 10px;
+
+  width: 100%;
+  height: 20px;
+}
+
+#containerCaixaPesquisa:hover #caixaPesquisa {
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+
+  color: #5f5f5f;
+  font-size: 16px;
+
+  padding: 10px;
+
+  width: 200px;
+  height: 20px;
+}
+
+.caixaAberta #iconFechar {
+  color: #214cce;
+  font-size: 20px;
+
+  margin: 3px 14px 0 0;
+
+  transition: all 0.2s ease;
+}
+
+#iconFechar:hover {
+  color: #4f7bff;
+}
+
+#iconFechar:hover {
+  cursor: pointer;
+}
+
+#linkInfo {
+  text-decoration: none;
+
+  border-radius: 50%;
+}
+
+#linkInfo:hover {
+  cursor: pointer;
+}
+
+#circuloInfo {
+  background-color: #ffffff;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  transition: all 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circuloInfo:hover {
+  background-color: rgb(20, 200, 200);
+}
+
+#txtInfo {
+  color: #214cce;
+  font-family: "Courgette", cursive;
+  font-size: 14px;
+}
+
+#containerPerfil {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnAssociar {
+  background-color: #f8d000;
+
+  min-height: 40px;
+
+  padding: 6px 24px;
+
+  border-radius: 20px;
+  border: none;
+
+  color: #214cce;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+  transition: all 0.3s ease;
+}
+
+#btnAssociar:hover {
+  background-color: #ffffff;
+}
+
+#circuloPerfil {
+  width: 65px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iconPerfil {
+  width: 55px;
+  height: 55px;
+}
+
+.iconVoltar {
+  color: #f8d000;
+  font-size: 65px;
+  margin-left: 40px;
+  margin-top: 33px;
+  transition: all 0.3s ease;
+}
+
+.iconVoltar:hover {
+  color: #214cce;
+
+  cursor: pointer;
+}
+
+/*conteudo*/
+
+.tudo {
+  width: 720px;
+  align-items: center;
+  height: 590px;
+  background-color: #ffffff;
+  margin-left: 630px;
+  border-radius: 25px;
+  margin-top: 130px;
+  box-shadow: 0px 0px 14px 0px #8a8a8a;
+  padding-top: 30px;
+}
+
+.partedecima {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+}
+
+#txtcima {
+  font-size: 40px;
+  color: #214cce;
+  font-weight: 700;
+  font-family: "urbanist", sans-serif;
+  margin-top: 40px;
+}
+
+.pix {
+  margin-top: 90px;
+  font-family: "urbanist", sans-serif;
+  font-size: large;
+}
+
+b {
+  color: #5f5f5f;
+  font-family: "urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.DR {
+  margin-top: 30px;
+  font-family: "urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+.NR {
+  margin-top: 30px;
+  font-family: "urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+}
+.VR {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "urbanist", sans-serif;
+}
+
+h1 {
+  font-family: "urbanist", sans-serif;
+  color: #214cce;
+  font-weight: 500;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.parte1 {
+  font-size: 10px;
+  margin-top: 110px;
+  margin-left: 90px;
+  font-family: "urbanist", sans-serif;
+  font-size: large;
+}
+
+.finalizar {
+  background-color: #f8d000;
+  border-radius: 10px;
+  width: 230px;
+  height: 50px;
+  border-color: transparent;
+  font-family: "urbanist", sans-serif;
+  color: #ffffff;
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 550;
+  box-shadow: 1px 1px 10px 1px #a5a5a5;
+}
+
+.finalizar:hover {
+  cursor: pointer;
+  background-color: #214cce;
+  transition: all 0.4s ease;
+}
+
+.img {
+  width: 200px;
+  margin-top: -270px;
+  height: 200px;
+  margin-left: 50px;
+  display: flex;
+}
+
+.chavepix {
+  font-family: "urbanist", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  width: 300px;
+}
+.btn {
+  background-color: #9b9b9b;
+  border-radius: 10px;
+  width: 230px;
+  height: 40px;
+  border-color: transparent;
+  font-family: "urbanist", sans-serif;
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 550;
+  box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.BNT:hover {
+  cursor: pointer;
+  color: #214cce;
+  transition: all 0.4s ease;
+}
+.areaanexo {
+  width: 10px;
+  flex-direction: column;
+  height: 300px;
+  background-color: #ffffff;
+  margin-left: 520px;
+  align-items: center;
+  justify-content: center;
+  margin-top: -202px;
+  display: flex;
+  text-align: center;
+}
+
+#upfile {
+  background-color: #f8d000;
+  width: 2300px;
+  height: 4000px;
+  border-color: #f30000;
+  font-family: "urbanist", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.upload-btn input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  box-shadow: 0px 7px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.input-file-upload {
+  display: flex;
+  flex-direction: column;
+}
+
+.upload-btn {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.headerBox {
+  padding: 0 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.tituloBox {
+  cursor: default;
+
+  color: #214cce;
+  font-weight: 700;
+  font-size: 40px;
+  font-family: "urbanist", sans-serif;
+}
+
+/* SETA VOLTAR */
+
+.iconVoltar {
+  color: #f8d000;
+  font-size: 60px;
+
+  margin: 10px 0 0;
+
+  transition: all 0.3s ease;
+}
+
+.iconVoltar:hover {
+  cursor: pointer;
+
+  color: #214cce;
+}

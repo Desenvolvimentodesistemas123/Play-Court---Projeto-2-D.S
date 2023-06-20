@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Court</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo.png" />
+    <link rel="stylesheet" href="css/cssAlt/quadraaviso.css" />
+    <link rel="stylesheet" href="css/cssAlt/calendario.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+
+    <style>
+      @media screen and (max-width: 720px) {
+        .weekdays li,
+        .days li {
+          width: 13.1%;
+        }
+      }
+
+      @media screen and (max-width: 420px) {
+        .weekdays li,
+        .days li {
+          width: 12.5%;
+        }
+
+        .days li .active {
+          padding: 2px;
+        }
+      }
+
+      @media screen and (max-width: 290px) {
+        .weekdays li,
+        .days li {
+          width: 12.2%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav id="navBar">
+      <div id="navEsquerda" class="divisaoNav">
+        <div id="logoNav">
+          <div id="circuloLogo" class="circuloExtremidade">
+            <img id="imgLogo" src="img/logo.png" />
+          </div>
+        </div>
+  
+        <!-- <div id="item1" class="item">
+          <a href="redirecionar/inicio/inicio.html" class="linkNav">
+            <div id="iconhome" class="icon">
+              <i class="bx bxs-home"></i>
+            </div>
+  
+            <p class="txtLink">Início</p>
+          </a>
+        </div>
+  
+        <div id="item2" class="item">
+          <a href="redirecionar/carteira/carteira.html" class="linkNav">
+            <div id="iconcarteira" class="icon">
+              <i class="bx bxs-wallet"></i>
+            </div>
+  
+            <p class="txtLink">Carteira</p>
+          </a>
+        </div>
+  
+        <div id="item3" class="item">
+          <a href="reservados.html" class="linkNav">
+            <div id="iconreservados" class="icon">
+              <i class="bx bxs-calendar"></i>
+            </div>
+  
+            <p class="txtLink">Reservados</p>
+          </a>
+        </div>
+  
+        <div id="item4" class="item">
+          <a href="redirecionar/avisos/avisos.html" class="linkNav">
+            <div id="iconavisos" class="icon">
+              <i class="bx bxs-error-alt"></i>
+            </div>
+  
+            <p class="txtLink">Avisos</p>
+          </a>
+        </div> -->
+  
+        <!-- SE A NAV FOR PARA UMA TELA DE ASSOCIADO, DESCOMENTAR A DIV ABAIXO E COMENTAR A DIV ACIMA -->
+  
+        <div id="item1" class="item">
+          <a href="telaInicalAssociado.html" class="linkNav">
+            <div id="iconhome" class="icon">
+              <i class="bx bxs-business"></i>
+            </div>
+  
+            <p class="txtLink">Início</p>
+          </a>
+        </div>
+  
+        <div id="item2" class="item">
+          <a href="estatisticas.html" class="linkNav">
+            <div id="iconestatistica" class="icon">
+              <i class="bx bxs-bar-chart-alt-2"></i>
+            </div>
+  
+            <p class="txtLink">Estatísticas</p>
+          </a>
+        </div>
+  
+        <div id="item3" class="item">
+          <a href="calendarioADM.html" class="linkNav">
+            <div id="iconreservados" class="icon">
+              <i class="bx bxs-calendar"></i>
+            </div>
+  
+            <p class="txtLink">Reservados</p>
+          </a>
+        </div>
+  
+        <div id="item4" class="item">
+          <a href="avisosADM.html" class="linkNav">
+            <div id="iconavisos" class="icon">
+              <i class="bx bxs-error-alt"></i>
+            </div>
+  
+            <p class="txtLink">Avisos</p>
+          </a>
+        </div>
+      </div>
+  
+      <!-- <div id="espaco"></div> -->
+      <!-- <div id="espacoAssociar"></div> -->
+      <div id="espacoAssociado"></div>
+      <!-- SE A NAV CONTIVER O ASSOCIAR-SE, DESCOMENTAR A SEGUNDA DIV E COMENTAR AS DEMAIS -->
+      <!-- SE A NAV FOR PARA UMA TELA DE ASSOCIADO, DESCOMENTAR A TERCEIRA DIV E COMENTAR AS DEMAIS -->
+  
+      <!-- SE A NAV CONTIVER O ASSOCIAR-SE, ADICIONAR "Associar" NO ID ABAIXO -->
+      <!-- SE A NAV FOR DE UMA TELA PARA ASSOCIADO, ADICIONAR "Associado" NO ID ABAIXO -->
+      <div id="navDireitaAssociado" class="divisaoNav">
+        <!-- SE A NAV FOR DE UMA TELA PARA ASSOCIADO, ADICIONAR "Associado" NO ID ABAIXO -->
+        <div id="containerPesquisaAssociado">
+          <div id="containerPesquisaFechar" class="caixaAberta">
+            <div id="botaoAbrirPesquisa" class="botaoAberto">
+              <div id="iconLupa">
+                <i class="bx bx-search"></i>
+              </div>
+  
+              <div id="caixaPesquisa">
+                <input type="text" id="inputCaixaPesquisa" />
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- SE A NAV NÃO CONTIVER O ASSOCIAR-SE, COMENTAR A TAG A -->
+        <!-- <a href="#">
+        <button id="btnAssociar">Associar-se</button>
+      </a> -->
+  
+        <a href="infoADM.html" id="linkInfo">
+          <div id="circuloInfo">
+            <h1 id="txtInfo">i</h1>
+          </div>
+        </a>
+  
+        <div id="containerPerfil">
+          <div id="circuloPerfil" class="circuloExtremidade">
+            <a href="perfilADM.html" id="iconPerfil" class="iconCirculo">
+              <img src="img/user.png" id="iconPerfil" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mainContainer" id="mainContainerW70hh">
+      <div class="headerBox">
+        <a href="telaInicalAssociado.html" class="iconVoltar">
+          <i class="bx bx-chevron-left"></i>
+        </a>
+
+        <h2 class="tituloBox">Quadro de Avisos</h2>
+      </div>
+
+      <div class="Q2">
+        <div class="cima">
+          <h3 class="letra2">Escolha uma data:</h3>
+
+          <div id="calen"><i class="bx bx-calendar"></i></div>
+        </div>
+
+        <div class="baixo" style="font-family: 'Urbanist', sans-serif">
+          <header>
+            <p class="current-date"></p>
+            <div class="icons">
+              <span id="prev" class="material-symbols-rounded"
+                >chevron_left</span
+              >
+              <span id="next" class="material-symbols-rounded"
+                >chevron_right</span
+              >
+            </div>
+          </header>
+          <div class="calendar">
+            <ul class="weeks">
+              <li>D</li>
+              <li>S</li>
+              <li>T</li>
+              <li>Q</li>
+              <li>Q</li>
+              <li>S</li>
+              <li>S</li>
+            </ul>
+            <ul class="days"></ul>
+          </div>
+        </div>
+
+        <div class="dropdownn">
+          <button class="dropbtnn">Organizar Por Cidade</button>
+          <div class="dropdown-contentt">
+            <a href="#">Baturité</a>
+            <a href="#">Capistrano</a>
+            <a href="#">Aracoiaba</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="containerCaixaEscreva">
+        <h2 class="tituloBox2">Deixe um aviso aqui</h2>
+        <input type="text" id="inputCaixaEscreva" placeholder="Conteúdo:">
+      </div>
+    </main>
+
+    <script src="js/calend.js"></script>
+    
+  </body>
+</html>

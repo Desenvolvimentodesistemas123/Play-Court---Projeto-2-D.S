@@ -1,0 +1,182 @@
+.ESTRELAesquerda {
+  color: #f8d000;
+  font-size: 27px;
+
+  transition: all 0.2s ease;
+}
+
+main {
+  position: fixed;
+  width: 100%;
+  height: 62.7vh;
+  overflow: visible;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+span {
+  font-size: x-large;
+}
+
+img {
+  width: 100%;
+}
+
+.swiper {
+  height: 500px;
+}
+
+.swiper-slide {
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .swiper {
+    height: 270px;
+  }
+}
+
+.swiper-button-next {
+  color: #d7d7d7;
+  font-weight: bold;
+}
+
+.swiper-button-prev {
+  font-weight: bold;
+  color: #d7d7d7;
+}
+
+.partebaixo {
+  background-color: #d7d7d7;
+
+  width: 100%;
+  height: 340px;
+
+  position: absolute;
+  bottom: 0%;
+
+  border-radius: 25px 25px 0 0;
+
+  display: flex;
+  align-items: center;
+
+  z-index: 5;
+}
+
+h1,
+h3 {
+  padding: 7px;
+  color: #001ba8;
+  letter-spacing: 10;
+  font-weight: 600;
+}
+
+h2 {
+  padding: 7px;
+  color: #214cce;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.ESTRELA {
+  width: 10px;
+  height: 10px;
+  margin-left: 75px;
+  top: -100px;
+}
+
+.avaliacao {
+  width: 600px;
+
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-left: 140px;
+  font-size: 22px;
+  margin-top: -155.3px;
+  font-weight: bold;
+}
+
+#parteEsquerda {
+  background-color: transparent;
+
+  width: 50%;
+  height: 100%;
+
+  padding: 30px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#parteDireita {
+  background-color: transparent;
+
+  width: 50%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+}
+
+#estrelasDIREITA {
+  color: #f8d000;
+  margin-right: 10px;
+  margin-top: -25px;
+  font-size: 27px;
+
+  transition: all 0.2s ease;
+}
+
+.divisaoESTRELA {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row;
+
+  background-color: transparent;
+
+  gap: -2px;
+}
+
+#containerBotaoReservar {
+  width: 250px;
+
+  display: flex;
+  justify-content: center;
+
+  text-decoration: none;
+}
+
+#botaoReservar {
+  background-color: #f8d000;
+  color: #214cce;
+
+  min-height: 50px;
+  padding: 6px 50px;
+  border-radius: 10px;
+  border: none;
+
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  margin-right: 55px;
+  transition: all 0.6s ease;
+}
+
+#botaoReservar:hover {
+  cursor: pointer;
+  background-color: #ffffff;
+}

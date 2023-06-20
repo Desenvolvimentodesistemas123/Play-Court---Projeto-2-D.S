@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cssLoginCadastro/empresa.css" />
+    <title>Play Court</title>
+    <link rel="icon" href="img/logo (2).png" />
+  </head>
+
+  <body>
+    <div class="main-login">
+      <div class="left-login">
+        <h1>
+          Faça cadastro <br />
+          E entre para o nosso time.
+        </h1>
+        <img
+          src="img/soccer-animate (1).svg"
+          class="left-login-image"
+          alt="Animação"
+        />
+      </div>
+
+      <div class="right-login">
+        <div class="card-login">
+          <h1>CADASTRO DE ESPAÇO</h1>
+
+          <div class="textfield">
+            <label for="usuario">Cidade:</label>
+            <input
+              type="text"
+              name="usuario"
+              placeholder=" Digite sua Cidade"
+            />
+          </div>
+          <div class="textfield">
+            <label for="usuario">Bairro:</label>
+            <input
+              type="text"
+              name="usuario"
+              placeholder=" Digite seu Bairro"
+            />
+          </div>
+          <div class="textfield">
+            <label for="usuario">Endereço:</label>
+            <input type="text" name="usuario" placeholder=" Digite sua Rua" />
+          </div>
+
+          <div class="textfield">
+            <label for="cpf">CNPJ:</label>
+            <form name="cadastro">
+              <input
+                class="cpf"
+                type="text"
+                name="cpf"
+                \
+                pattern="\d{2}\.\d{3}\.\d{3}-\d{4}\d{2}"
+                \
+                placeholder="XX.XXX.XXX/XXXX-XX"
+              />
+            </form>
+          </div>
+          <div class="textfield">
+            <label for="number">Telefone da EMPRESA:</label>
+            <input type="text" name="numero" placeholder="Telefone" />
+          </div>
+
+          <div class="termoaccept">
+            <h1>Termos e condições:</h1>
+            <form>
+              <label for="agree"
+                >Li e aceito todos os termos de politica e privacidade:</label
+              >
+              <input type="checkbox" id="agree" name="agree" required />
+            </form>
+          </div>
+
+          <a class="a" href="telaInicalAssociado.html"><button class="btn-login">ASSOCIAR-SE</button></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

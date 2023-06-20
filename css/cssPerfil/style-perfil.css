@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap");
+
+* {
+  font-family: "Urbanist", sans-serif;
+  margin: 0;
+}
+
+.personal-image {
+  margin-top: 50px;
+  text-align: center;
+  width: 10px;
+  height: 10px;
+  padding-left: 100px;
+}
+.personal-image input[type="file"] {
+  display: none;
+}
+.personal-figure {
+  position: relative;
+  width: 120px;
+  height: 120px;
+}
+
+.bordapreta {
+  margin-left: -24px;
+  position: absolute;
+}
+.personal-avatar {
+  cursor: pointer;
+  width: 120px;
+  height: 120px;
+  box-sizing: border-box;
+  border-radius: 100%;
+  border: 2px solid transparent;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.2);
+  transition: all ease-in-out 0.3s;
+  margin-left: 10px;
+  position: absolute;
+}
+.personal-avatar:hover {
+  box-shadow: 10px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.personal-figcaption {
+  cursor: pointer;
+  position: absolute;
+  top: 0px;
+  width: inherit;
+  height: inherit;
+  border-radius: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  transition: all ease-in-out 0.3s;
+  margin-left: 69px;
+}
+.personal-figcaption:hover {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.personal-figcaption > img {
+  margin-top: 32.5px;
+  width: 50px;
+  height: 50px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.botao-voltar {
+  width: 50px;
+  height: 50px;
+  font-size: 70px;
+  background-color: transparent;
+  border: none;
+  color: #f9d72b;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.botao-voltar:hover {
+  color: #214cce;
+  cursor: pointer;
+}
+
+.perfil-menu {
+  display: flex;
+}
+
+.card {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.informacoes {
+  width: 600px;
+  height: 300px;
+  background: #fff;
+  box-shadow: 10px 5px 40px gray;
+  padding: 50px;
+}
+
+.botao-salvar {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  background-color: black;
+  color: aqua;
+}
+.perfil {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+}
+
+.form {
+  padding-left: 300px;
+  margin-top: 55px;
+  margin-left: 50px;
+  position: relative;
+}
+
+.form label {
+  font-size: 23px;
+  color: #254dcb;
+  margin-left: 10px;
+}
+
+.form input {
+  width: 70%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 23px;
+  padding: 30px;
+  letter-spacing: 1px;
+}
+
+.date {
+  letter-spacing: 5px;
+}
+
+#inputEstado {
+  width: 70%;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 23px;
+  padding: 30px;
+}
+
+.botao-alterar1,
+.botao-alterar2,
+.botao-alterar3,
+.botao-alterar4,
+.botao-alterar5 {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+}
+
+#BOTAO {
+  background-color: transparent;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 40px;
+  margin-top: 210px;
+  margin-left: 255px;
+  position: absolute;
+  z-index: 2;
+}
+
+#usuario,
+#email,
+#senha,
+#regiao,
+#nasc {
+  z-index: 1;
+}
+.botao-alterar1,
+.botao-alterar2,
+.botao-alterar3,
+.botao-alterar4,
+.botao-alterar5 {
+  z-index: 2;
+  margin-left: -68px;
+  margin-top: 10px;
+  position: absolute;
+}
+
+.usuario,
+.email,
+.senha,
+.regiao,
+.data {
+  font-weight: bold;
+}
+
+.txtperfil {
+  font-size: 35px;
+  color: #214cce;
+  margin-left: 100px;
+  position: absolute;
+  margin-top: 55px;
+  text-size-adjust: 10px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.save {
+  width: 100vw;
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.botao-save {
+  width: 200px;
+  height: 35px;
+  border-radius: 13px;
+  border: transparent;
+  background-color: #214cce;
+  font-size: 20px;
+  color: #f9d72b;
+}

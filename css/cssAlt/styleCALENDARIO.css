@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+#nav {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  top: -2cm;
+  align-items: center;
+  justify-items: center;
+  border-radius: 20px;
+  font-family: 'Urbanist', sans-serif;
+  left: 18cm;
+  position: relative;
+}
+
+#nav li {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: bold;
+  list-style: none;
+  background: #214cce;
+  width: 32cm;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 68px;
+  outline: none;
+  
+  top: 1.85cm;
+}
+
+
+.parteAZUL {
+  
+  margin-right: 10000px;
+  transition: all 0.5s ease-in-out;
+  animation: infinite;
+  
+  top: 1.5cm;
+}
+
+
+#nav li a,
+#nav li label {
+  display: block;
+  padding: 8px;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+  font: 1em sans-serif;
+  font-weight: bold;
+  font-family: 'Urbanist', sans-serif;
+
+}
+
+#nav li a:hover,
+#nav li label:hover {
+  border-left: 4px solid rgb(218, 214, 13);
+  background: #ffffff;
+  transition: all 0.5s ease;
+  color: #000000;
+}
+
+#nav li ul,
+#nav li input {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#nav li:hover ul li {
+  transition: all 0.5s ease;
+  color: ccc;
+}
+
+#nav li:hover ul li a:hover {
+  background: #222;
+  border-left: 4px solid #900;
+
+}
+
+#nav li input:checked+ul {
+  display: block;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+/* drop2*/
+
+/*css do caleendario*/
+
+.area-nav {
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+
+  justify-content: center;
+
+
+}
+.iconVoltar{
+  margin-top: 1px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Urbanist', sans-serif;
+}
+
+
+.conteudo {
+  left: 22.9cm;
+  position: absolute;
+  width: 32.04cm;
+  top: 200px;
+  align-items: center;
+  font-family: 'Urbanist', sans-serif;
+}
+
+.calendario {
+  text-align: center;
+  left: -46.5cm;
+  top: -3.2cm;
+  background-color: #d7d7d7;
+  width: 32.04cm;
+  font-family: 'Urbanist', sans-serif;
+  height: 25.5cm;
+  position: relative;
+}
+
+.diasdasemana {
+  background-color: #d7d7d7;
+}
+
+.conteudo .calendario header {
+  position: relative;
+}
+
+h2 {
+  top: 20px;
+  font-size: 32px;
+  /* text-transform: uppercase; */
+}
+
+
+.calendario table {
+  top: 3000px;
+  border-collapse: collapse;
+
+}
+
+.calendario thead {
+  background: white;
+  font-weight: 600;
+  text-transform: rgba(47, 10, 54, 0.88);
+  border-bottom: 2px solid rgba(47, 10, 54, 0.88);
+}
+
+.calendario thead td {
+  height: 47.4px;
+  color: #214cce;
+  font-weight: bold;
+}
+
+#mes {
+  color: #214cce;
+  font: 2em sans-serif;
+  font-weight: bold;
+  top: 50px;
+  font-family: 'Urbanist', sans-serif;
+  font-size: 1.02cm;
+  height: 4vh;
+
+
+}
+
+.calendario td {
+
+  border: 1px solid #ffffff;
+  height: 80px;
+  text-align: center;
+  width: 10cm;
+  font-weight: bold;
+  font: 1.45em sans-serif;
+  font-family: 'Urbanist', sans-serif;
+  margin: 15cm;
+  padding: 0.4cm;
+
+}
+
+.calendario tbody td {
+  cursor: pointer;
+}
+
+.calendario tbody td:hover {
+  background: #8b8b8b;
+  width: 30px;
+  height: 30px;
+
+}
+
+.calendario table .dia-atual {
+  background: #f8d000;
+}
+
+.calendario .mes-anterior,
+.calendario .prx-mes {
+  color: #727272;
+}
+
+.calendario .mes-anterior:hover,
+.calendario .prx-mes:hover {
+  background: white;
+}
+
+.event {
+  position: relative;
+}
+
+.event:after {
+  content: '';
+  width: 7px;
+  height: 7px;
+  left: 50%;
+  bottom: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  background: #6b5555;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.event:hover::after {
+  background: #f9f9f9;
+}
+
+.event.dia-atual:after {
+  background: #f9f9f9;
+}
+
+
+.butao_anterior,
+.butao_proximo {
+  border: none;
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 32px;
+  font-weight: bold;
+  background: none;
+  text-decoration: none;
+  top: 0.20cm;
+}
+
+.butao_anterior {
+  left: 63px;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.butao_proximo {
+  right: 63px;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.ano_anterior,
+.ano_proximo {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  line-height: 32px;
+  font-weight: bold;
+  background: none;
+  top: 11.5cm;
+}
+
+
+.ano_anterior {
+  top: 16cm;
+  left: 63px;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+}
+
+.ano_proximo {
+  top: 16cm;
+  right: 63px;
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.137);
+
+}
+
+
+#ano {
+  color: #214cce;
+  font-weight: bold;
+  font: 2em sans-serif;
+  top: 16cm;
+  font-size: 1.2cm;
+  font-family: 'Urbanist', sans-serif;
+  left: 15cm;
+  position: absolute;
+}
+
+/* horarios */
+#a:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#a:hover,
+#b:active {
+
+  color: #fff;
+  background-color: #123456;
+
+}
+
+
+#b:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#c:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#d:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#e:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#f:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#g:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#h:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#i:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#j:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#k:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#l:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#m:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#n:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+#o:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+
+}
+
+.btn btn-primary {
+  border: #444;
+  box-shadow: 2px 2px 4px;
+}

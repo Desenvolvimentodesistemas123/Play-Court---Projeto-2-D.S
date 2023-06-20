@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cssLoginCadastro/style.css" />
+    <link rel="icon" href="img/logo (2).png" />
+    <title>Play Court</title>
+  </head>
+  <body>
+    <div class="main-login">
+      <div class="left-login">
+        <h1>Faça login para <br />acessar nossa plataforma!</h1>
+        <img
+          src="img/beach-volleyball-animate (2).svg"
+          class="left-login-image"
+          alt="Animação"
+        />
+      </div>
+
+      <div class="right-login">
+        <div class="card-login">
+          <h1>LOGIN</h1>
+
+          <div class="textfield">
+            <label for="usuario">Login:</label>
+            <input type="text" name="usuario" placeholder="Login" />
+          </div>
+
+          <div class="textfield" class="passwrod-wrapper">
+            <label for="senha">Senha:</label>
+            <input type="password" id="passwordInput" placeholder="Senha" />
+            <label
+              class="password-toggle"
+              for="passwordInput"
+              onclick="togglePasswordVisibility()"
+            >
+              <img
+                id="olho"
+                src="img/olhoaberto.svg"
+                alt="Toggle Password Visibility"
+              />
+            </label>
+          </div>
+
+          <p id="cadastre">
+            Não tem conta?
+            <a id="cadastre2" href="teladecadastro2.html"> Cadastre-se </a>
+          </p>
+
+          <p id="cadastre3">
+            <a href="recuperar.html" id="cadastre2">Esqueceu a senha? </a>
+          </p>
+
+          <a href="index.html">
+            <button class="btn-login">Login</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function togglePasswordVisibility() {
+      const passwordInput = document.getElementById("passwordInput");
+      passwordInput.type =
+        passwordInput.type === "password" ? "text" : "password";
+    }
+  </script>
+</html>

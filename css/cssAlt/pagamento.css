@@ -1,0 +1,547 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@600&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navBar {
+  width: 100%;
+  min-height: 80px;
+
+  background-color: #214cce;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0 30px;
+}
+
+#logoNav {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circuloLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circuloExtremidade:hover {
+  cursor: pointer;
+}
+
+#imgLogo {
+  width: 75px;
+  height: 75px;
+}
+
+#itensNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.txtLink {
+  margin: -6px 0 0;
+}
+
+.linkNav {
+  color: #ffffff;
+
+  text-decoration: none;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkNav:hover {
+  color: #f8d000;
+}
+
+.icon {
+  color: #f8d000;
+  font-size: 27px;
+
+  transition: all 0.3s ease;
+}
+
+.linkNav:hover .icon {
+  color: #ffffff;
+}
+
+.divisaoNav {
+  width: 35%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navDireita {
+  background-color: transparent;
+
+  /* width: 400px; */
+}
+
+#navDireitaAssociar {
+  background-color: transparent;
+
+  width: 440px;
+}
+
+#espaco {
+  width: 370px;
+  height: 30px;
+
+  margin: 0 0 0 0;
+
+  background-color: transparent;
+}
+
+#espacoAssociar {
+  width: 160px;
+  height: 30px;
+
+  background-color: transparent;
+}
+
+#containerPesquisaInfo {
+  gap: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixaAberta {
+  background-color: #ffffff;
+
+  border-radius: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoAberto {
+  background-color: #ffffff;
+
+  width: 300px;
+  height: 40px;
+
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.botaoAbertoAssociar {
+  background-color: #ffffff;
+
+  width: 240px;
+  height: 40px;
+
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#botaoAbrirPesquisa:hover {
+  cursor: pointer;
+}
+
+#iconLupa {
+  color: #214cce;
+
+  margin: 6px 0 0 2px;
+
+  font-size: 22px;
+
+  transition: all 0.2s ease;
+}
+
+.botaoAberto #iconLupa {
+  margin: 6px 0 0 10px;
+}
+
+.botaoAbertoAssociar #iconLupa {
+  margin: 6px 0 0 10px;
+}
+
+#caixaPesquisa {
+  background-color: transparent;
+
+  width: 90%;
+  margin: 0 10px 0;
+}
+
+#inputCaixaPesquisa {
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+
+  color: #5f5f5f;
+  font-size: 16px;
+
+  padding: 10px;
+
+  width: 100%;
+  height: 20px;
+}
+
+#containerCaixaPesquisa:hover #caixaPesquisa {
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+
+  color: #5f5f5f;
+  font-size: 16px;
+
+  padding: 10px;
+
+  width: 200px;
+  height: 20px;
+}
+
+.caixaAberta #iconFechar {
+  color: #214cce;
+  font-size: 20px;
+
+  margin: 3px 14px 0 0;
+
+  transition: all 0.2s ease;
+}
+
+#iconFechar:hover {
+  color: #4f7bff;
+}
+
+#iconFechar:hover {
+  cursor: pointer;
+}
+
+#linkInfo {
+  text-decoration: none;
+
+  border-radius: 50%;
+}
+
+#linkInfo:hover {
+  cursor: pointer;
+}
+
+#circuloInfo {
+  background-color: #ffffff;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  transition: all 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circuloInfo:hover {
+  background-color: rgb(20, 200, 200);
+}
+
+#txtInfo {
+  color: #214cce;
+  font-family: "Courgette", cursive;
+  font-size: 14px;
+}
+
+#containerPerfil {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnAssociar {
+  background-color: #f8d000;
+
+  min-height: 40px;
+
+  padding: 6px 24px;
+
+  border-radius: 20px;
+  border: none;
+
+  color: #214cce;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+  transition: all 0.3s ease;
+}
+
+#btnAssociar:hover {
+  background-color: #ffffff;
+}
+
+#circuloPerfil {
+  width: 65px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iconPerfil {
+  width: 55px;
+  height: 55px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@300&display=swap');
+
+
+
+body {
+  background-color: #d7d7d7;
+}
+
+#mainContainer {
+  background-color: #f1f2f4;
+
+  width: 50%;
+  height: 63vh;
+
+  margin: 80px auto;
+
+  border-radius: 25px;
+
+  box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+#tituloBox {
+  background-color: transparent;
+
+  width: 500px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iconVoltar {
+  color: #f8d000;
+  font-size: 60px;
+
+  margin: 6px 0 0;
+
+  transition: all .3s ease;
+}
+
+#iconVoltar:hover {
+  cursor: pointer;
+
+  color: #214cce;
+}
+
+#mainBox {
+  background-color: transparent;
+
+  width: 100%;
+  height: 60%;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+}
+
+.profile-container {
+  background-color: transparent;
+
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 20px;
+
+  border-radius: 25px;
+  height: 80vh;
+}
+
+#formBox {
+  background-color: transparent;
+
+  width: 100%;
+  height: 35vh;
+
+  gap: 30px;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-group {
+  width: 450px;
+  height: 55px;
+
+  gap: 30px;
+
+  border-radius: 10px;
+  border: #ccc;
+
+  font-family: 'Urbanist', sans-serif;
+  color: #214cce;
+
+  font-size: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"] {
+  width: 100%;
+  height: 40px;
+
+  padding: 5px 15px;
+
+
+  border: #d4d4d4;
+  border-radius: 8px;
+
+  color: black;
+  font-family: 'Urbanist', sans-serif;
+
+  box-shadow: 0px 2px 5px 0px #d7d7d7;
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 5px;
+
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-group .upload-btn-wrapper {
+  position: relative;
+
+  overflow: hidden;
+
+  display: inline-block;
+}
+
+.form-group .upload-btn-wrapper input[type="file"] {
+  font-size: 14px;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  opacity: 0;
+}
+
+.botao {
+  color: white;
+
+  width: 150px;
+  height: 40px;
+
+  background-color: #f8d000;
+
+  margin: 6px 0 0;
+
+  border-radius: 8px;
+  border: #9b9a9a;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+
+  transition: all .3s ease;
+}
+
+.botao:hover {
+  background-color: #214cce;
+
+  cursor: pointer;
+}
+
+#iconBotao {
+  margin: 0 5px 0 0;
+}
+
+.form-group .upload-btn-wrapper .uploaded-file {
+  margin-top: 10px;
+}
+
+#salvar {
+  width: 100px;
+  height: 30px;
+
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.2);
+  border: #9b9a9a;
+  border-radius: 5px;
+
+  color: black;
+  font-family: 'Urbanist', sans-serif;
+  font-size: medium;
+
+  cursor: pointer;
+}
+
+#txtDentro {
+  font-size: 15px;
+  padding-left: 15px;
+}
+
+.subTitulo {
+  text-align: center;
+
+  font-size: 25px;
+  font-family: 'Urbanist', sans-serif;
+
+  color: #214cce;
+}
+
+#formasPagamento {
+  background-color: transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

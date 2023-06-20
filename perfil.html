@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Court</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="img/logo.png" />
+  </head>
+
+  <body>
+    <nav id="navBar">
+      <div id="navEsquerda" class="divisaoNav">
+        <div id="logoNav">
+          <div id="circuloLogo" class="circuloExtremidade">
+            <img id="imgLogo" src="img/logo.png" />
+          </div>
+        </div>
+
+        <div id="itensNav">
+          <div id="item1" class="item">
+            <a href="index.html" class="linkNav">
+              <div id="iconhome" class="icon">
+                <i class="bx bxs-home"></i>
+              </div>
+
+              <p class="txtLink">Início</p>
+            </a>
+          </div>
+        </div>
+
+        <div id="item2" class="item">
+          <a href="carteira.html" class="linkNav">
+            <div id="iconcarteira" class="icon">
+              <i class="bx bxs-wallet"></i>
+            </div>
+
+            <p class="txtLink">Carteira</p>
+          </a>
+        </div>
+
+        <div id="item3" class="item">
+          <a href="reservados.html" class="linkNav">
+            <div id="iconreservados" class="icon">
+              <i class="bx bxs-calendar"></i>
+            </div>
+
+            <p class="txtLink">Reservados</p>
+          </a>
+        </div>
+
+        <div id="item4" class="item">
+          <a href="quadroAvisos.html" class="linkNav">
+            <div id="iconavisos" class="icon">
+              <i class="bx bxs-error-alt"></i>
+            </div>
+
+            <p class="txtLink">Avisos</p>
+          </a>
+        </div>
+      </div>
+
+      <!-- SE A NAV FOR PARA UMA TELA DE ASSOCIADO, DESCOMENTAR A DIV ABAIXO E COMENTAR A DIV ACIMA -->
+
+      <!-- <div id="itensNav">
+          <div id="item1" class="item">
+            <a href="redirecionar/inicio/inicio.html" class="linkNav">
+              <div id="iconhome" class="icon">
+                <i class="bx bxs-business"></i>
+              </div>
+
+              <p class="txtLink">Início</p>
+            </a>
+          </div>
+        </div>
+
+        <div id="item2" class="item">
+          <a href="redirecionar/carteira/carteira.html" class="linkNav">
+            <div id="iconcarteira" class="icon">
+              <i class="bx bxs-bar-chart-alt-2"></i>
+            </div>
+
+            <p class="txtLink">Estatísticas</p>
+          </a>
+        </div>
+
+        <div id="item3" class="item">
+          <a href="reservados.html" class="linkNav">
+            <div id="iconreservados" class="icon">
+              <i class="bx bxs-calendar-exclamation"></i>
+            </div>
+
+            <p class="txtLink">Avisos</p>
+          </a>
+        </div>
+      </div> -->
+
+      <div id="espaco"></div>
+      <!-- <div id="espacoAssociar"></div> -->
+      <!-- <div id="espacoAssociado"></div> -->
+      <!-- SE A NAV CONTIVER O ASSOCIAR-SE, DESCOMENTAR A SEGUNDA DIV E COMENTAR AS DEMAIS -->
+      <!-- SE A NAV FOR PARA UMA TELA DE ASSOCIADO, DESCOMENTAR A TERCEIRA DIV E COMENTAR AS DEMAIS -->
+
+      <!-- SE A NAV CONTIVER O ASSOCIAR-SE, ADICIONAR "Associar" NO ID ABAIXO -->
+      <!-- SE A NAV FOR DE UMA TELA PARA ASSOCIADO, ADICIONAR "Associado" NO ID ABAIXO -->
+      <div id="navDireita" class="divisaoNav">
+        <!-- SE A NAV FOR DE UMA TELA PARA ASSOCIADO, ADICIONAR "Associado" NO ID ABAIXO -->
+        <div id="containerPesquisa">
+          <div id="containerPesquisaFechar" class="caixaAberta">
+            <div id="botaoAbrirPesquisa" class="botaoAberto">
+              <div id="iconLupa">
+                <i class="bx bx-search"></i>
+              </div>
+
+              <div id="caixaPesquisa">
+                <input type="text" id="inputCaixaPesquisa" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SE A NAV NÃO CONTIVER O ASSOCIAR-SE, COMENTAR A TAG A -->
+        <!-- <a href="#">
+          <button id="btnAssociar">Associar-se</button>
+        </a> -->
+
+        <a href="info.html" id="linkInfo">
+          <div id="circuloInfo">
+            <h1 id="txtInfo">i</h1>
+          </div>
+        </a>
+
+        <div id="containerPerfil">
+          <div id="circuloPerfil" class="circuloExtremidade">
+            <a href="perfil.html" id="iconPerfil" class="iconCirculo">
+              <img src="img/user.png" id="iconPerfil" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mainContainer" id="mainContainerW70">
+      <div class="headerBox">
+        <a href="index.html" class="iconVoltar">
+          <i class="bx bx-chevron-left"></i>
+        </a>
+
+        <h2 class="tituloBox">Meu perfil</h2>
+      </div>
+
+      <div class="perfil">
+        <div class="logo">
+          <div class="personal-image">
+            <label class="label">
+              <input type="file" />
+              <figure class="personal-figure">
+                <img
+                  src="img/avatar.png"
+                  class="personal-avatar"
+                  alt="avatar"
+                />
+                <figcaption class="personal-figcaption">
+                  <img
+                    class="bordapreta"
+                    src="https://raw.githubusercontent.com/ThiagoLuizNunes/angular-boilerplate/master/src/assets/imgs/camera-white.png"
+                  />
+                </figcaption>
+              </figure>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <form>
+          <label class="labelPerfil" for="usuario">Usuário:</label>
+          <br />
+          <input type="text" id="usuario" disabled="" placeholder="Usuário" />
+          <button
+            class="botaoAlterar"
+            type="button"
+            onclick="alternarInputUsuario()"
+          >
+            <i class="bx bxs-edit"></i>
+          </button>
+          <br /><br />
+          <label class="labelPerfil" for="email">Email:</label>
+          <br />
+          <input
+            type="email"
+            id="email"
+            disabled=""
+            placeholder="exemplo@gmail.com"
+          />
+          <button
+            class="botaoAlterar"
+            type="button"
+            onclick="alternarInputEmail()"
+          >
+            <i class="bx bxs-edit"></i>
+          </button>
+          <br /><br />
+          <label class="labelPerfil" for="senha">Senha:</label>
+          <br />
+          <input
+            type="password"
+            id="senha"
+            disabled=""
+            placeholder="*************"
+          />
+          <button
+            class="botaoAlterar"
+            type="button"
+            onclick="alternarInputSenha()"
+          >
+            <i class="bx bxs-edit"></i>
+          </button>
+          <br /><br />
+          <label class="labelPerfil" for="regiao">Região:</label>
+          <br />
+          <input type="text" disabled="" id="regiao" placeholder="Baturité" />
+          <button
+            class="botaoAlterar"
+            type="button"
+            onclick="alternarInputRegiao()"
+          >
+            <i class="bx bxs-edit"></i>
+          </button>
+          <br /><br />
+          <label class="labelPerfil" for="date">Data de nascimento:</label>
+          <br />
+          <input
+            class="date"
+            type="text"
+            id="nasc"
+            disabled=""
+            placeholder="23/05/1998"
+          />
+          <button
+            class="botaoAlterar"
+            type="button"
+            onclick="alternarInputNasc()"
+          >
+            <i class="bx bxs-edit"></i>
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      function mostrarSenha() {
+        var senhaInput = document.getElementById("senha");
+        if (senhaInput.type === "password") {
+          senhaInput.type = "text";
+        } else {
+          senhaInput.type = "password";
+        }
+      }
+
+      function alternarInputUsuario() {
+        var input = document.getElementById("usuario");
+        input.disabled = !input.disabled;
+
+        var botao = document.getElementById("meuBotao");
+        if (input.disabled) {
+          botao.innerText = "Ativar";
+        } else {
+          botao.innerText = "Desativar";
+        }
+      }
+
+      function alternarInputEmail() {
+        var input = document.getElementById("email");
+        input.disabled = !input.disabled;
+
+        var botao = document.getElementById("meuBotao");
+        if (input.disabled) {
+          botao.innerText = "Ativar";
+        } else {
+          botao.innerText = "Desativar";
+        }
+      }
+
+      function alternarInputSenha() {
+        var input = document.getElementById("senha");
+        input.disabled = !input.disabled;
+
+        var botao = document.getElementById("meuBotao");
+        if (input.disabled) {
+          botao.innerText = "Ativar";
+        } else {
+          botao.innerText = "Desativar";
+        }
+      }
+
+      function alternarInputRegiao() {
+        var input = document.getElementById("regiao");
+        input.disabled = !input.disabled;
+
+        var botao = document.getElementById("meuBotao");
+        if (input.disabled) {
+          botao.innerText = "Ativar";
+        } else {
+          botao.innerText = "Desativar";
+        }
+      }
+
+      function alternarInputNasc() {
+        var input = document.getElementById("nasc");
+        input.disabled = !input.disabled;
+
+        var botao = document.getElementById("meuBotao");
+        if (input.disabled) {
+          botao.innerText = "Ativar";
+        } else {
+          botao.innerText = "Desativar";
+        }
+      }
+
+      function mostrarCaixaTextoUsuario() {
+        var novoUsuario = prompt("Digite o novo texto para o placeholder:");
+
+        if (novoUsuario !== null) {
+          document.getElementById("usuario").placeholder = novoUsuario;
+        }
+      }
+
+      function mostrarCaixaTextoEmail() {
+        var novoEmail = prompt("Digite o novo texto para o placeholder:");
+
+        if (novoEmail !== null) {
+          document.getElementById("email").placeholder = novoEmail;
+        }
+      }
+
+      function mostrarCaixaTextoSenha() {
+        var novoSenha = prompt("Digite o novo texto para o placeholder:");
+
+        if (novoSenha !== null) {
+          document.getElementById("senha").placeholder = novoSenha;
+        }
+      }
+
+      function mostrarCaixaTextoRegiao() {
+        var novoRegiao = prompt("Digite o novo texto para o placeholder:");
+
+        if (novoRegiao !== null) {
+          document.getElementById("regiao").placeholder = novoRegiao;
+        }
+      }
+
+      function mostrarCaixaTextoNasc() {
+        var novoNasc = prompt("Digite o novo texto para o placeholder:");
+
+        if (novoNasc !== null) {
+          document.getElementById("nasc").placeholder = novoNasc;
+        }
+      }
+    </script>
+
+    <script src="scriptClick.js"></script>
+  </body>
+</html>

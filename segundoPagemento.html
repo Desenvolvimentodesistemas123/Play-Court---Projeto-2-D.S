@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Court</title>
+    <link rel="stylesheet" href="css/cssAlt/stylePagamento2.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo.png" />
+  </head>
+
+  <body>
+    <nav id="navBar">
+      <div id="navEsquerda" class="divisaoNav">
+        <div id="logoNav">
+          <div id="circuloLogo" class="circuloExtremidade">
+            <img id="imgLogo" src="img/logo.png" />
+          </div>
+        </div>
+
+        <div id="itensNav">
+          <div id="item1" class="item">
+            <a href="redirecionar/inicio/inicio.html" class="linkNav">
+              <div id="iconhome" class="icon">
+                <i class="bx bxs-home"></i>
+              </div>
+
+              <p class="txtLink">Início</p>
+            </a>
+          </div>
+        </div>
+
+        <div id="item2" class="item">
+          <a href="redirecionar/carteira/carteira.html" class="linkNav">
+            <div id="iconcarteira" class="icon">
+              <i class="bx bxs-wallet"></i>
+            </div>
+
+            <p class="txtLink">Carteira</p>
+          </a>
+        </div>
+
+        <div id="item3" class="item">
+          <a href="reservados.html" class="linkNav">
+            <div id="iconreservados" class="icon">
+              <i class="bx bxs-calendar"></i>
+            </div>
+
+            <p class="txtLink">Reservados</p>
+          </a>
+        </div>
+
+        <div id="item4" class="item">
+          <a href="redirecionar/avisos/avisos.html" class="linkNav">
+            <div id="iconavisos" class="icon">
+              <i class="bx bxs-error-alt"></i>
+            </div>
+
+            <p class="txtLink">Avisos</p>
+          </a>
+        </div>
+      </div>
+
+      <div id="espaco"></div>
+      <!-- <div id="espacoAssociar"></div> -->
+      <!-- SE A NAV CONTIVER O ASSOCIAR-SE, DESCOMENTAR A SEGUNDA DIV E COMENTAR A PRIMEIRA -->
+
+      <!-- SE A NAV CONTIVER O ASSOCIAR-SE, ADICIONAR "Associar" NO ID ABAIXO -->
+      <div id="navDireitaAssociar" class="divisaoNav">
+        <div id="containerPesquisa">
+          <div id="containerPesquisaFechar" class="caixaAberta">
+            <div id="botaoAbrirPesquisa" class="botaoAberto">
+              <div id="iconLupa">
+                <i class="bx bx-search"></i>
+              </div>
+
+              <div id="caixaPesquisa">
+                <input type="text" id="inputCaixaPesquisa" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SE A NAV NÃO CONTIVER O ASSOCIAR-SE, COMENTAR A TAG A -->
+        <!-- <a href="#">
+        <button id="btnAssociar">Associar-se</button>
+      </a> -->
+
+        <a id="linkInfo">
+          <div id="circuloInfo">
+            <h1 id="txtInfo">i</h1>
+          </div>
+        </a>
+
+        <div id="containerPerfil">
+          <div id="circuloPerfil" class="circuloExtremidade">
+            <a href="#" id="iconPerfil" class="iconCirculo">
+              <img src="img/user.png" id="iconPerfil" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <main id="mainContainer">
+      <div class="profile-container">
+        <div class="pag-usuario">
+          <div id="tituloBox">
+            <div id="iconVoltar">
+              <i class="bx bx-chevron-left"></i>
+            </div>
+            <h2 id="txtTitulo">Pagamento</h2>
+          </div>
+        </div>
+        <div class="dados">
+          <div id="containerPagamentoForm">
+            <form id="formBox">
+              <div class="form-group">
+                <label id="textnome" for="nome">Data da reserva</label>
+                <input
+                  id="txtDentro"
+                  type="text"
+                  id="spacenome"
+                  name="nome"
+                  placeholder="22/09/23"
+                  required
+                  disabled=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label id="textnome" for="nome">Valor</label>
+                <input
+                  id="txtDentro"
+                  type="text"
+                  id="spacenome"
+                  name="nome"
+                  placeholder="R$ 200,00"
+                  required
+                  disabled=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label id="textnome" for="nome">Desconto</label>
+                <input
+                  id="txtDentro"
+                  type="text"
+                  id="spacenome"
+                  name="nome"
+                  placeholder="10%"
+                  required
+                  disabled=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label id="textnome" for="nome">Valor com desconto</label>
+                <input
+                  id="txtDentro"
+                  type="text"
+                  id="spacenome"
+                  name="nome"
+                  placeholder="R$ 180,00"
+                  required
+                  disabled=""
+                />
+              </div>
+
+              <div class="form-group">
+                <label id="textnome" for="nome">Valor 50% do total pago</label>
+                <input
+                  id="txtDentro"
+                  type="text"
+                  id="spacenome"
+                  name="nome"
+                  placeholder="R$ 90,00"
+                  required
+                  disabled=""
+                />
+              </div>
+            </form>
+            <div id="formasPagamento">
+              <h3 class="subTitulo">Formas de Pagamento:</h3>
+
+              <div id="containerPixCartao">
+                <a href="pix.html">
+                  <button class="botao">
+                    <i class="bx bx-qr-scan" id="iconBotao"></i>Pix
+                  </button>
+                </a>
+                <a href="pagamentoCartao.html">
+                  <button class="botao">
+                    <i class="bx bxs-credit-card" id="iconBotao"></i>Cartão
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

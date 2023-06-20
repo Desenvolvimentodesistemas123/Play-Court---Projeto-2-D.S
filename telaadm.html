@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cssLoginCadastro/adm.css" />
+    <title>Play Court</title>
+    <script src="script.js"></script>
+    <link rel="icon" href="img/logo (2).png" />
+  </head>
+
+  <body>
+    <div class="main-login">
+      <div class="left-login">
+        <h1>
+          Faça cadastro <br />
+          E entre para o nosso time.
+        </h1>
+        <img
+          src="img/tennis-animate.svg"
+          class="left-login-image"
+          alt="Animação"
+        />
+      </div>
+
+      <div class="right-login">
+        <div class="card-login">
+          <h1>CADASTRO DE ASSOCIADO</h1>
+
+          <div class="textfield">
+            <label for="usuario">Nome completo:</label>
+            <input type="text" name="usuario" placeholder="Nome completo" />
+          </div>
+
+          <div class="textfield">
+            <label for="cpf">Digite seu CPF:</label>
+            <form name="cadastro">
+              <input
+                class="cpf"
+                type="text"
+                name="cpf"
+                \
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                \
+                placeholder="XXX.XXX.XXX-XX"
+              />
+            </form>
+          </div>
+          <div class="textfield">
+            <label for="number">Telefone:</label>
+            <input
+              type="text"
+              name="numero"
+              placeholder="Telefone para contato"
+            />
+          </div>
+
+          <div class="textfield">
+            <label for="data">Data de nascimento:</label>
+            <input type="date" name="nasc" placeholder="Email" />
+          </div>
+
+          <div class="textfield">
+            <label for="pix">Chave PIX:</label>
+            <input type="text" name="pix" placeholder="Chave PIX" />
+          </div>
+          <div class="textfield">
+            <label for="pix">Conta Bancária:</label>
+            <input type="text" name="pix" placeholder="Conta Bancária" />
+          </div>
+          <div class="termoaccept">
+            <h1>Termos e condições:</h1>
+            <form>
+              <label for="agree"
+                >Li e aceito todos os termos de politica e privacidade:</label
+              >
+              <input type="checkbox" id="agree" name="agree" required />
+            </form>
+          </div>
+
+          <button class="btn-login">
+            <a href="teladeempreza.html">AVANÇAR</a>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

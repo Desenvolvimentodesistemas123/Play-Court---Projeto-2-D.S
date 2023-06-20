@@ -1,0 +1,120 @@
+#parte1 {
+  position: relative;
+
+  width: 1500px;
+  height: 170px;
+  background-color: #e7e7e7;
+  margin-left: 120px;
+  border-radius: 20px;
+  box-shadow: #000000;
+  box-shadow: 10px 10px 10px 1px #a5a5a5;
+}
+
+#parte2 {
+  width: 1500px;
+  height: 170px;
+  background-color: #e7e7e7;
+  margin-left: 120px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: #000000;
+  box-shadow: 10px 10px 10px 1px #a5a5a5;
+}
+
+#parte3 {
+  width: 1500px;
+  height: 170px;
+  background-color: #e7e7e7;
+  margin-left: 120px;
+  margin-top: 40px;
+  border-radius: 20px;
+  box-shadow: 9px 9px 9px 1px #a5a5a5;
+}
+
+#parte1,
+#parte2,
+#parte3:hover {
+  text-decoration: none;
+}
+
+#foto1 {
+  height: 170px;
+  width: 270px;
+
+  border-radius: 20px;
+}
+
+#foto2 {
+  height: 170px;
+  width: 270px;
+  border-radius: 20px;
+}
+
+#foto3 {
+  height: 170px;
+  width: 270px;
+  border-radius: 20px;
+}
+
+#titulo1 {
+  margin-top: -130px;
+  margin-left: 340px;
+  color: #214cce;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 550;
+}
+
+#sub {
+  margin-top: -10px;
+  margin-left: 340px;
+  color: #214cce;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 500;
+}
+
+#n1 {
+  margin-left: 1300px;
+  margin-top: -70px;
+  color: #214cce;
+}
+
+#estrela1 {
+  margin-left: 1365px;
+  height: 40px;
+  width: 40px;
+  margin-top: -90px;
+}
+
+#seta2,
+#seta3,
+#seta4 {
+  margin-left: 1435px;
+  height: 35px;
+  width: 25px;
+  margin-top: -90px;
+  margin-left: 1410px;
+  font-size: 80px;
+  display: flex;
+}
+
+#nomeg {
+  color: #214cce;
+  margin-left: 140px;
+  margin-top: -100px;
+  height: 2px;
+  width: 40px;
+  font-size: 45px;
+  font-family: "Urbanist", sans-serif;
+  font-weight: 800;
+}
+
+#setaesquerda {
+  height: 30px;
+  width: 40px;
+  margin-left: 95px;
+  margin-top: 11px;
+}
+
+.linkNav:hover {
+  text-decoration: none;
+}

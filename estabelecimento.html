@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Play Court</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/logo.png" />
+  </head>
+
+  <body>
+    <nav id="navBar">
+      <div id="navEsquerda" class="divisaoNav">
+        <div id="logoNav">
+          <div id="circuloLogo" class="circuloExtremidade">
+            <img id="imgLogo" src="img/logo.png" />
+          </div>
+        </div>
+  
+        <!-- <div id="item1" class="item">
+          <a href="redirecionar/inicio/inicio.html" class="linkNav">
+            <div id="iconhome" class="icon">
+              <i class="bx bxs-home"></i>
+            </div>
+  
+            <p class="txtLink">Início</p>
+          </a>
+        </div>
+  
+        <div id="item2" class="item">
+          <a href="redirecionar/carteira/carteira.html" class="linkNav">
+            <div id="iconcarteira" class="icon">
+              <i class="bx bxs-wallet"></i>
+            </div>
+  
+            <p class="txtLink">Carteira</p>
+          </a>
+        </div>
+  
+        <div id="item3" class="item">
+          <a href="reservados.html" class="linkNav">
+            <div id="iconreservados" class="icon">
+              <i class="bx bxs-calendar"></i>
+            </div>
+  
+            <p class="txtLink">Reservados</p>
+          </a>
+        </div>
+  
+        <div id="item4" class="item">
+          <a href="redirecionar/avisos/avisos.html" class="linkNav">
+            <div id="iconavisos" class="icon">
+              <i class="bx bxs-error-alt"></i>
+            </div>
+  
+            <p class="txtLink">Avisos</p>
+          </a>
+        </div> -->
+  
+        <!-- SE A NAV FOR PARA UMA TELA DE ASSOCIADO, DESCOMENTAR A DIV ABAIXO E COMENTAR A DIV ACIMA -->
+  
+        <div id="item1" class="item">
+          <a href="telaInicalAssociado.html" class="linkNav">
+            <div id="iconhome" class="icon">
+              <i class="bx bxs-business"></i>
+            </div>
+  
+            <p class="txtLink">Início</p>
+          </a>
+        </div>
+  
+        <div id="item2" class="item">
+          <a href="estatisticas.html" class="linkNav">
+            <div id="iconestatistica" class="icon">
+              <i class="bx bxs-bar-chart-alt-2"></i>
+            </div>
+  
+            <p class="txtLink">Estatísticas</p>
+          </a>
+        </div>
+  
+        <div id="item3" class="item">
+          <a href="calendarioADM.html" class="linkNav">
+            <div id="iconreservados" class="icon">
+              <i class="bx bxs-calendar"></i>
+            </div>
+  
+            <p class="txtLink">Reservados</p>
+          </a>
+        </div>
+  
+        <div id="item4" class="item">
+          <a href="avisosADM.html" class="linkNav">
+            <div id="iconavisos" class="icon">
+              <i class="bx bxs-error-alt"></i>
+            </div>
+  
+            <p class="txtLink">Avisos</p>
+          </a>
+        </div>
+      </div>
+  
+      <!-- <div id="espaco"></div> -->
+      <!-- <div id="espacoAssociar"></div> -->
+      <div id="espacoAssociado"></div>
+      <!-- SE A NAV CONTIVER O ASSOCIAR-SE, DESCOMENTAR A SEGUNDA DIV E COMENTAR AS DEMAIS -->
+      <!-- SE A NAV FOR PARA UMA TELA DE ASSOCIADO, DESCOMENTAR A TERCEIRA DIV E COMENTAR AS DEMAIS -->
+  
+      <!-- SE A NAV CONTIVER O ASSOCIAR-SE, ADICIONAR "Associar" NO ID ABAIXO -->
+      <!-- SE A NAV FOR DE UMA TELA PARA ASSOCIADO, ADICIONAR "Associado" NO ID ABAIXO -->
+      <div id="navDireitaAssociado" class="divisaoNav">
+        <!-- SE A NAV FOR DE UMA TELA PARA ASSOCIADO, ADICIONAR "Associado" NO ID ABAIXO -->
+        <div id="containerPesquisaAssociado">
+          <div id="containerPesquisaFechar" class="caixaAberta">
+            <div id="botaoAbrirPesquisa" class="botaoAberto">
+              <div id="iconLupa">
+                <i class="bx bx-search"></i>
+              </div>
+  
+              <div id="caixaPesquisa">
+                <input type="text" id="inputCaixaPesquisa" />
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- SE A NAV NÃO CONTIVER O ASSOCIAR-SE, COMENTAR A TAG A -->
+        <!-- <a href="#">
+        <button id="btnAssociar">Associar-se</button>
+      </a> -->
+  
+        <a href="infoADM.html" id="linkInfo">
+          <div id="circuloInfo">
+            <h1 id="txtInfo">i</h1>
+          </div>
+        </a>
+  
+        <div id="containerPerfil">
+          <div id="circuloPerfil" class="circuloExtremidade">
+            <a href="perfilADM.html" id="iconPerfil" class="iconCirculo">
+              <img src="img/user.png" id="iconPerfil" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="mainContainer" id="mainContainerW50">
+      <div class="headerBox">
+        <a href="telaInicalAssociado.html" class="iconVoltar">
+          <i class="bx bx-chevron-left"></i>
+        </a>
+
+        <h2 class="tituloBox">Meu Estabelecimento</h2>
+      </div>
+
+      <div id="mainBox">
+        <form id="formBox">
+          <div class="formContent">
+            <label for="nome">Nome:</label>
+            <input
+              class="textoInput"
+              type="text"
+              name="nome"
+              placeholder="Digite o nome do estabelecimento"
+              required
+            />
+          </div>
+
+          <div id="cnpj" class="formContent">
+            <label for="cnpj">CNPJ:</label>
+            <input
+              class="textoInput"
+              type="text"
+              name="cnpj"
+              placeholder="Digite o CNPJ"
+              required
+            />
+          </div>
+
+          <div class="formContent">
+            <label for="imagem">Imagem:</label>
+            <div class="upload-btn-wrapper">
+              <button class="botao" id="botaoImagem">
+                Selecionar Imagem<input
+                  type="file"
+                  name="upload button"
+                  accept="image/*"
+                  required
+                />
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <button id="botaoSalvar" type="submit">Salvar</button>
+          </div>
+
+          <div class="formContent">
+            <label for="VALOR">Valor da Reserva:</label>
+            <input
+              id="TEXTOVALOR"
+              type="text"
+              id="VALOR"
+              name="VALOR"
+              placeholder="Determine o valor por hora."
+              required
+            />
+          </div>
+          <div class="formContent">
+            <label for="horarios">Horários:</label>
+            <input
+              id="TEXTOHORARIOS"
+              type="text"
+              id="horarios"
+              name="horarios"
+              placeholder="Determine os horários de funcionamento."
+              required
+            />
+          </div>
+
+          <div class="formContent">
+            <label for="endereco">Endereço:</label>
+            <input
+              id="TEXTOENDERECOS"
+              type="text"
+              id="endereco"
+              name="endereco"
+              placeholder="Cidade/CEP/Rua/Número/Ponto de Referência."
+              required
+            />
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script>
+      // Exibe o nome do arquivo selecionado
+      document.getElementById("imagem");
+    </script>
+  </body>
+</html>

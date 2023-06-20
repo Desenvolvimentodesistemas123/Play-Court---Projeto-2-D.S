@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Urbanist', sans-serif;
+  box-sizing: border-box;
+}
+
+
+.containerRESERVADOS {
+  display: flex;
+  position: relative;
+}
+
+.txtRESERVADOS {
+  font-size: 1.45cm;
+  position: absolute;
+  top: 0.5cm;
+  left: 6.8cm;
+  color: #214cce;
+  font-weight: lighter; 
+}
+
+#setaAMARELAcima {
+  font-size: 1.85cm;
+  left: 5.2cm;
+  top: 0.50cm;
+  position: absolute;
+  transition: all 0.5ms ease;
+  color: #f8d000;
+  background: none;
+  font-weight: lighter;
+  transition: all 0.5s ease;
+}
+
+#setaAMARELAcima:hover {
+  color: #214cce;
+  background: none;  
+}
+
+.containerCIMA {
+  display: flex;
+  align-items: center;
+}
+
+.fotoUSUARIO {
+  width: 1, 7cm;
+  height: 1.5cm;
+  top: 0.9cm;
+  left: 41.1%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerREDONDO {
+  position: relative;
+  width: 10cm;
+  height: 12cm;
+  left: 18.5cm;
+  top: -3.8cm;
+
+  background: #214cce;
+  border-radius: 16px;
+  display: none;
+
+}
+
+button {
+  width: 7cm;
+  height: 1cm;
+  border: none;
+  background: rgba(217, 217, 217, 0.6);
+  border-radius: 25px;
+  transition: all 0.5s ease;
+}
+
+button:hover,
+.nome,
+.esporte .tempo {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.NOMEescolhido {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+
+  position: absolute;
+  left: 3.8cm;
+  top: 4.68cm;
+}
+
+.ESPORTEescolhido {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  left: 4.42cm;
+  top: 6.7cm;
+}
+
+.TEMPOescolhido {
+  color: #fff;
+  cursor: pointer;
+  background: none;
+  position: absolute;
+  left: 3.25cm;
+  top: 8.65cm;
+}
+
+.nome {
+  border-radius: 20px;
+  font-family: "Urbanist", sans-serif;
+  right: 1.66cm;
+  top: 3.4cm;
+  font-size: xx-small;
+
+  color: #fff;
+  font-weight: bold;
+  font-size: 17.5px;
+
+  justify-content: center;
+  align-items: center;
+  background-color: #d7d7d781;
+
+  position: absolute;
+}
+
+.esporte {
+  font-family: "Urbanist", sans-serif;
+  left: 23cm;
+
+  font-size: xx-small;
+  font-weight: 100;
+  color: #fff;
+  font-weight: 600;
+  font-size: 17.5px;
+  justify-content: center;
+
+  border-radius: 20px;
+  align-items: center;
+  background-color: #d7d7d781;
+
+  position: absolute;
+  left: 1.35cm;
+  top: 5.4cm;
+}
+
+.tempo {
+  font-family: "Urbanist", sans-serif;
+  left: 23cm;
+  font-size: xx-small;
+  color: #fff;
+
+  font-size: 17.5px;
+  background-color: #d7d7d781;
+  border-radius: 20px;
+  position: absolute;
+  left: 1.35cm;
+  top: 7.4cm;
+}
+
+.coisasMEIO {
+  top: 10cm;
+  align-items: center;
+  justify-content: center;
+}
+
+.headerCONTAINER {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#setaAMARELA {
+  font-size: 1cm;
+  left: 1cm;
+  top: 1.2cm;
+  position: absolute;
+  transition: all 0.5ms ease;
+  color: #f8d000;
+  transition: all 0.5s ease;
+}
+
+#setaAMARELA:hover {
+  position: absolute;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.containerQUADRADO {
+  background-color: #214cce;
+  width: 10cm;
+  height: 4.5cm;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 16.38cm;
+  right: 63.2cm;
+}
+
+.nomeQUADRA {
+  color: #ffffff;
+  position: absolute;
+  top: 0.4cm;
+  font-size: 0.68cm;
+  background: none;
+  left: 2.3cm;
+}
+
+.horarios {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+  background: #ffffff;
+  position: absolute;
+  border-radius: 13px;
+  font-size: 0.6cm;
+  width: 5cm;
+  right: 2.6cm;
+  top: 2.2cm;
+  height: 1cm;
+
+  transition: all 0.5s ease;
+}
+
+.horarios:hover {
+  color: #000000;
+  background-color: #f8d000;
+}
+
+
+#setaCINZA {
+  position: absolute;
+  left: 16.67%;
+  right: 16.67%;
+
+  top: 16.5cm;
+  z-index: 100;
+  font-size: 1cm;
+  color: #00000071;
+  background: none;
+}

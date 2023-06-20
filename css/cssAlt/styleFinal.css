@@ -1,0 +1,856 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Noto+Sans:wght@400;700&family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Urbanist:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tudo {
+  width: 100%;
+  height: 100vh;
+}
+
+#navBar {
+  width: 100%;
+  min-height: 80px;
+
+  background-color: #214cce;
+
+  font-family: "urbanist", sans-serif;
+  font-weight: 500;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+
+  padding: 0 30px;
+}
+
+#logoNav {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circuloLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circuloExtremidade:hover {
+  cursor: pointer;
+}
+
+#imgLogo {
+  width: 75px;
+  height: 75px;
+}
+
+#itensNav {
+  display: flex;
+  flex-direction: row;
+}
+
+.txtLink {
+  margin: -6px 0 0;
+}
+
+.linkNav {
+  color: #ffffff;
+
+  text-decoration: none;
+  font-size: 18px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkNav:hover {
+  color: #f8d000;
+
+  text-decoration: none;
+}
+
+.icon {
+  color: #f8d000;
+  font-size: 27px;
+
+  transition: all 0.3s ease;
+}
+
+.linkNav:hover .icon {
+  color: #ffffff;
+}
+
+.divisaoNav {
+  width: 35%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#navDireitaAssociar {
+  background-color: transparent;
+}
+
+#navDireita {
+  background-color: transparent;
+
+  width: 440px;
+}
+
+#navDireitaAssociado {
+  width: 120px;
+}
+
+#espaco {
+  width: 370px;
+  height: 30px;
+
+  margin: 0 0 0 0;
+
+  background-color: transparent;
+}
+
+#espacoAssociar {
+  width: 160px;
+  height: 30px;
+
+  background-color: transparent;
+}
+
+#espacoAssociado {
+  width: 760px;
+  height: 30px;
+
+  background-color: transparent;
+}
+
+#containerPesquisaAssociado {
+  display: none;
+}
+
+.caixaAberta {
+  background-color: #ffffff;
+
+  border-radius: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botaoAberto {
+  background-color: #ffffff;
+
+  width: 300px;
+  height: 40px;
+
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.botaoAbertoAssociar {
+  background-color: #ffffff;
+
+  width: 240px;
+  height: 40px;
+
+  border-radius: 25px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#botaoAbrirPesquisa:hover {
+  cursor: pointer;
+}
+
+#iconLupa {
+  color: #214cce;
+
+  margin: 6px 0 0 2px;
+
+  font-size: 22px;
+
+  transition: all 0.2s ease;
+}
+
+.botaoAberto #iconLupa {
+  margin: 6px 0 0 10px;
+}
+
+.botaoAbertoAssociar #iconLupa {
+  margin: 6px 0 0 10px;
+}
+
+#caixaPesquisa {
+  background-color: transparent;
+
+  width: 90%;
+  margin: 0 10px 0;
+}
+
+#inputCaixaPesquisa {
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+
+  color: #5f5f5f;
+  font-size: 16px;
+
+  padding: 10px;
+
+  width: 100%;
+  height: 20px;
+}
+
+#containerCaixaPesquisa:hover #caixaPesquisa {
+  border: none;
+  outline: none;
+
+  background-color: transparent;
+
+  color: #5f5f5f;
+  font-size: 16px;
+
+  padding: 10px;
+
+  width: 200px;
+  height: 20px;
+}
+
+.caixaAberta #iconFechar {
+  color: #214cce;
+  font-size: 20px;
+
+  margin: 3px 14px 0 0;
+
+  transition: all 0.2s ease;
+}
+
+#iconFechar:hover {
+  color: #4f7bff;
+}
+
+#iconFechar:hover {
+  cursor: pointer;
+}
+
+#linkInfo {
+  text-decoration: none;
+
+  border-radius: 50%;
+}
+
+#linkInfo:hover {
+  cursor: pointer;
+}
+
+#circuloInfo {
+  background-color: #ffffff;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  transition: all 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#circuloInfo:hover {
+  background-color: rgb(20, 200, 200);
+}
+
+#txtInfo {
+  color: #214cce;
+  font-family: "Courgette", cursive;
+  font-size: 14px;
+}
+
+#containerPerfil {
+  width: 60px;
+  height: 60px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#btnAssociar {
+  background-color: #f8d000;
+
+  min-height: 40px;
+
+  padding: 6px 24px;
+
+  border-radius: 20px;
+  border: none;
+
+  color: #214cce;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+
+  transition: all 0.3s ease;
+}
+
+#btnAssociar:hover {
+  background-color: #ffffff;
+}
+
+#circuloPerfil {
+  width: 65px;
+  height: 60px;
+
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#iconPerfil {
+  width: 55px;
+  height: 55px;
+}
+
+/*dropdown*/
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+body {
+  background: ffffff;
+  margin: 5px;
+  display: flex;
+  font-family: "Urbanist", sans-serif;
+}
+
+#nav {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-family: "Urbanist", sans-serif;
+  margin-left: 30%;
+}
+
+#nav li {
+  font-family: "Urbanist", sans-serif;
+  font-weight: bold;
+  list-style: none;
+  background: #214cce;
+  width: 800px;
+  border-bottom: 1px solid #757575;
+  outline: none;
+  padding: 10px;
+}
+
+#nav li a,
+#nav li label {
+  display: block;
+  padding: 8px;
+  border-left: 4px solid #ffffff;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px #9d9898;
+  color: #ffffff;
+  cursor: pointer;
+  font: 1em sans-serif;
+  font-weight: bold;
+  font-family: "Urbanist", sans-serif;
+}
+
+#nav li a:hover,
+#nav li label:hover {
+  border-left: 4px solid rgb(218, 214, 13);
+  background: #ffffff;
+  transition: all 0.5s ease;
+  color: #000000;
+}
+
+#nav li ul,
+#nav li input {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#nav li:hover ul li {
+  transition: all 0.5s ease;
+}
+
+#nav li:hover ul li a {
+  color: ccc;
+}
+
+#nav li:hover ul li a:hover {
+  background: #222;
+  border-left: 4px solid #900;
+}
+
+#nav li input:checked + ul {
+  display: block;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+/* drop2*/
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+body {
+  margin: 5px;
+  display: flex;
+  transition: all 0.5s ease;
+  font-family: "Urbanist", sans-serif;
+}
+
+#nav2 {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  margin-left: 0%;
+  font-family: "Urbanist", sans-serif;
+}
+
+#nav2 li {
+  text-align: center;
+  font: 1em sans-serif;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  background: #ffffff;
+  width: 780px;
+  border-bottom: 1px solid #666;
+  outline: none;
+  padding: 10px;
+  transition: all 0.5s ease;
+  margin-left: 0px;
+  margin-top: 2px;
+  font-family: "Urbanist", sans-serif;
+}
+
+#btn :hover {
+  background-color: #dc1e1e;
+  color: #000000;
+  transition: 0.5s;
+}
+
+#nav2 li a,
+#nav2 li label {
+  display: block;
+  padding: 8px;
+  border-left: 4px solid #444;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px #ccc;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#nav2 li a:hover,
+#nav2 li label:hover {
+  border-left: 4px solid rgb(247, 247, 247);
+  background: #ffffff;
+  transition: all 0.5s ease;
+}
+
+#nav2 li ul,
+#nav2 li input {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#nav2 li:hover ul li a {
+  transition: all 0.5s ease;
+}
+
+#nav2 li input:checked + ul {
+  display: block;
+  cursor: pointer;
+}
+
+/*DROP3*/
+
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+}
+
+body {
+  margin: 5px;
+  display: flex;
+  transition: all 0.5s ease;
+}
+
+#nav3 {
+  margin: 0;
+  padding: 0;
+  transition: all 0.5s ease;
+  margin-left: 0%;
+  font: 1.2em sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+#nav3 li {
+  font-weight: bold;
+  font: 1em sans-serif;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  background: #ffffff;
+  width: 780px;
+  border-bottom: 1px solid #666;
+  outline: none;
+  padding: 10px;
+  transition: all 0.5s ease;
+  margin-left: 0px;
+  margin-top: 2px;
+  font-family: "Urbanist", sans-serif;
+}
+
+#nav3 li a,
+#nav3 li label {
+  display: block;
+  padding: 8px;
+  border-left: 4px solid #444;
+  text-decoration: none;
+  box-shadow: 2px 2px 5px #ccc;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#nav3 li a:hover,
+#nav3 li label:hover {
+  border-left: 4px solid rgb(247, 247, 247);
+  background: #ffffff;
+  transition: all 0.5s ease;
+}
+
+#nav2 li ul,
+#nav3 li input {
+  display: none;
+  transition: all 0.5s ease;
+}
+
+#nav3 li:hover ul li a {
+  transition: all 0.5s ease;
+}
+
+#nav3 li input:checked + ul {
+  display: block;
+  cursor: pointer;
+}
+
+/*css do caleendario*/
+
+.area-nav {
+  background-color: red;
+  width: 100%;
+  height: 100vh;
+
+  justify-content: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Urbanist", sans-serif;
+}
+body {
+  background: #f1f1f1;
+}
+.conteudo {
+  left: 3%;
+  margin: 0 0 0 -250px;
+  position: relative;
+  width: 779px;
+  align-items: center;
+  font-family: "Urbanist", sans-serif;
+}
+.calendario {
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  margin-top: -17px;
+  font-family: "Urbanist", sans-serif;
+}
+.conteudo .calendario header {
+  position: relative;
+}
+h2 {
+  margin-top: 20px;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.butao_anterior,
+.butao_proximo {
+  position: absolute;
+  top: 50%;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  margin-top: -16px;
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.butao_anterior {
+  left: 80px;
+}
+.butao_proximo {
+  right: 80px;
+}
+.butao_anterior:hover,
+.butao_proximo:hover {
+  background: #cbd1d2;
+  color: #cbd1d2;
+}
+.calendario table {
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+.calendario thead {
+  background: white;
+  font-weight: 600;
+  text-transform: rgba(47, 10, 54, 0.88);
+  border-bottom: 2px solid rgba(47, 10, 54, 0.88);
+}
+.calendario thead td {
+  height: 47.4px;
+  color: #214cce;
+  font-weight: bold;
+}
+
+#mes {
+  color: #214cce;
+  font: 2em sans-serif;
+  font-weight: bold;
+  top: 30px;
+  font-family: "Urbanist", sans-serif;
+}
+
+.calendario td {
+  border: 1px solid #ffffff;
+  height: 31.4px;
+  text-align: center;
+  width: 150.4px;
+  color: #000000;
+  font-weight: bold;
+  font: 1em sans-serif;
+  font-family: "Urbanist", sans-serif;
+}
+.calendario tbody td {
+  cursor: pointer;
+}
+.calendario tbody td:hover {
+  background: #8b8b8b;
+  width: 30px;
+  height: 30px;
+}
+.calendario table .dia-atual {
+  background: rgb(82, 156, 195);
+}
+.calendario .mes-anterior,
+.calendario .prx-mes {
+  color: #727272;
+}
+.calendario .mes-anterior:hover,
+.calendario .prx-mes:hover {
+  background: rgb(31, 46, 217);
+}
+.event {
+  position: relative;
+}
+.event:after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  left: 50%;
+  bottom: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  background: #6b5555;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+}
+.event:hover::after {
+  background: #f9f9f9;
+}
+.event.dia-atual:after {
+  background: #f9f9f9;
+}
+.ano_anterior,
+.ano_proximo {
+  position: absolute;
+  top: 50%;
+  height: 32px;
+  width: 32px;
+  line-height: 32px;
+  margin-top: 194.5px;
+  border: 2px solid #cbd1d2;
+  border-radius: 50%;
+  color: #cbd1d2;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+}
+.ano_anterior {
+  margin-top: 130px;
+  left: 80px;
+}
+.ano_proximo {
+  right: 80px;
+  margin-top: 130px;
+}
+.ano_anterior:hover,
+.ano_proximo:hover {
+  background: #cbd1d2;
+  color: #cbd1d2;
+}
+
+#ano {
+  color: #214cce;
+  font-weight: bold;
+  font: 2em sans-serif;
+  font-family: "Urbanist", sans-serif;
+}
+/* horarios */
+#a:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+
+#a:hover,
+#b:active {
+  color: #fff;
+  background-color: #123456;
+}
+
+#b:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#c:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#d:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#e:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#f:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#g:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#h:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#i:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#j:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#k:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#l:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#m:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#n:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+#o:hover {
+  background-color: gray;
+  transition: all 0.5s ease;
+}
+.btn btn-primary {
+  border: #444;
+  box-shadow: 2px 2px 4px;
+}
+
+
+
+#botaoReservar {
+  color: #214cce;
+
+  width: 150px;
+  height: 40px;
+
+  background-color: #f8d000;
+
+  margin: 6px 0 0 48.5%;
+
+  border-radius: 8px;
+  border: #9b9a9a;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  box-shadow: 0 4px 6px 2px rgba(40, 40, 40, 0.2);
+
+  transition: all 0.3s ease;
+}
+
+#botaoReservar:hover {
+  color: white;
+
+  background-color: #214cce;
+
+  cursor: pointer;
+}

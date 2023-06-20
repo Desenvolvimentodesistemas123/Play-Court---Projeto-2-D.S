@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/cssLoginCadastro/estilo.css" />
+    <title>Play Court</title>
+    <link rel="icon" href="img/logo (2).png" />
+  </head>
+
+  <body>
+    <div class="main-login">
+      <div class="left-login">
+        <h1>
+          Faça cadastro <br />
+          E entre para o time Play Court!
+        </h1>
+
+        <img
+          src="img/basketball-animate.svg"
+          class="left-login-image"
+          alt="Animação"
+        />
+      </div>
+
+      <div class="right-login">
+        <div class="card-login">
+          <h1>CADASTRO</h1>
+
+          <div class="textfield">
+            <label for="usuario">Nome completo:</label>
+            <input type="text" name="usuario" placeholder="Nome completo" />
+          </div>
+
+          <div class="textfield">
+            <label for="cpf">Digite seu CPF:</label>
+            <form name="cadastro">
+              <input
+                class="cpf"
+                type="text"
+                name="cpf"
+                \
+                pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+                \
+                placeholder="XXX.XXX.XXX-XX"
+              />
+            </form>
+          </div>
+
+          <div class="textfield">
+            <label for="date">Data de nascimento:</label>
+            <input type="date" name="nasc" placeholder="date" />
+          </div>
+
+          <div class="textfield">
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" placeholder="Email" />
+          </div>
+
+          <div class="textfield">
+            <label for="senha">Senha:</label>
+
+            <input type="password" id="passwordInput" placeholder="Senha" />
+            <label
+              class="password-toggle"
+              for="passwordInput"
+              onclick="togglePasswordVisibility()"
+            >
+              <img
+                id="olho"
+                src="img/olhoaberto.svg"
+                alt="Toggle Password Visibility"
+              />
+            </label>
+          </div>
+
+          <div class="termoaccept">
+            <h1>Termos e condições:</h1>
+            <form>
+              <label for="agree"
+                >Li e aceito todos os termos de politica e privacidade:</label
+              >
+              <input type="checkbox" id="agree" name="agree" required />
+            </form>
+          </div>
+
+          <a href="index.html"><button class="btn-login">CADASTRAR-SE</button></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function togglePasswordVisibility() {
+        const passwordInput = document.getElementById("passwordInput");
+        passwordInput.type =
+          passwordInput.type === "password" ? "text" : "password";
+      }
+    </script>
+  </body>
+</html>

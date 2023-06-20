@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Court</title>
+  <link rel="stylesheet" href="css/cssAlt/inicio.css">
+  <link rel="stylesheet" href="css/cssAlt/style.css" />
+  <link
+    href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+    rel="stylesheet"
+  />
+  <link rel="icon" href="img/logo.png" />
+  <script src="funcoes.js"></script>
+</head>
+
+<body>
+  <nav id="navBar">
+    <div id="navEsquerda" class="divisaoNav">
+      <div id="logoNav">
+        <div id="circuloLogo" class="circuloExtremidade">
+          <img id="imgLogo" src="img/logo.png" />
+        </div>
+      </div>
+
+      <!-- <div id="item1" class="item">
+        <a href="redirecionar/inicio/inicio.html" class="linkNav">
+          <div id="iconhome" class="icon">
+            <i class="bx bxs-home"></i>
+          </div>
+
+          <p class="txtLink">Início</p>
+        </a>
+      </div>
+
+      <div id="item2" class="item">
+        <a href="redirecionar/carteira/carteira.html" class="linkNav">
+          <div id="iconcarteira" class="icon">
+            <i class="bx bxs-wallet"></i>
+          </div>
+
+          <p class="txtLink">Carteira</p>
+        </a>
+      </div>
+
+      <div id="item3" class="item">
+        <a href="reservados.html" class="linkNav">
+          <div id="iconreservados" class="icon">
+            <i class="bx bxs-calendar"></i>
+          </div>
+
+          <p class="txtLink">Reservados</p>
+        </a>
+      </div>
+
+      <div id="item4" class="item">
+        <a href="redirecionar/avisos/avisos.html" class="linkNav">
+          <div id="iconavisos" class="icon">
+            <i class="bx bxs-error-alt"></i>
+          </div>
+
+          <p class="txtLink">Avisos</p>
+        </a>
+      </div> -->
+
+      <!-- SE A NAV FOR PARA UMA TELA DE ASSOCIADO, DESCOMENTAR A DIV ABAIXO E COMENTAR A DIV ACIMA -->
+
+      <div id="item1" class="item">
+        <a href="telaInicalAssociado.html" class="linkNav">
+          <div id="iconhome" class="icon">
+            <i class="bx bxs-business"></i>
+          </div>
+
+          <p class="txtLink">Início</p>
+        </a>
+      </div>
+
+      <div id="item2" class="item">
+        <a href="estatisticas.html" class="linkNav">
+          <div id="iconestatistica" class="icon">
+            <i class="bx bxs-bar-chart-alt-2"></i>
+          </div>
+
+          <p class="txtLink">Estatísticas</p>
+        </a>
+      </div>
+
+      <div id="item3" class="item">
+        <a href="calendarioADM.html" class="linkNav">
+          <div id="iconreservados" class="icon">
+            <i class="bx bxs-calendar"></i>
+          </div>
+
+          <p class="txtLink">Reservados</p>
+        </a>
+      </div>
+
+      <div id="item4" class="item">
+        <a href="avisosADM.html" class="linkNav">
+          <div id="iconavisos" class="icon">
+            <i class="bx bxs-error-alt"></i>
+          </div>
+
+          <p class="txtLink">Avisos</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- <div id="espaco"></div> -->
+    <!-- <div id="espacoAssociar"></div> -->
+    <div id="espacoAssociado"></div>
+    <!-- SE A NAV CONTIVER O ASSOCIAR-SE, DESCOMENTAR A SEGUNDA DIV E COMENTAR AS DEMAIS -->
+    <!-- SE A NAV FOR PARA UMA TELA DE ASSOCIADO, DESCOMENTAR A TERCEIRA DIV E COMENTAR AS DEMAIS -->
+
+    <!-- SE A NAV CONTIVER O ASSOCIAR-SE, ADICIONAR "Associar" NO ID ABAIXO -->
+    <!-- SE A NAV FOR DE UMA TELA PARA ASSOCIADO, ADICIONAR "Associado" NO ID ABAIXO -->
+    <div id="navDireitaAssociado" class="divisaoNav">
+      <!-- SE A NAV FOR DE UMA TELA PARA ASSOCIADO, ADICIONAR "Associado" NO ID ABAIXO -->
+      <div id="containerPesquisaAssociado">
+        <div id="containerPesquisaFechar" class="caixaAberta">
+          <div id="botaoAbrirPesquisa" class="botaoAberto">
+            <div id="iconLupa">
+              <i class="bx bx-search"></i>
+            </div>
+
+            <div id="caixaPesquisa">
+              <input type="text" id="inputCaixaPesquisa" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SE A NAV NÃO CONTIVER O ASSOCIAR-SE, COMENTAR A TAG A -->
+      <!-- <a href="#">
+      <button id="btnAssociar">Associar-se</button>
+    </a> -->
+
+      <a href="infoADM.html" id="linkInfo">
+        <div id="circuloInfo">
+          <h1 id="txtInfo">i</h1>
+        </div>
+      </a>
+
+      <div id="containerPerfil">
+        <div id="circuloPerfil" class="circuloExtremidade">
+          <a href="perfilADM.html" id="iconPerfil" class="iconCirculo">
+            <img src="img/user.png" id="iconPerfil" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
+    <div class="alinhar">
+
+
+    <div class="area-de-baixo">
+      <div class="area-avl">
+        <h1>Avaliações e comentários</h1>
+        <ul class="avaliacao">
+          <li class="icone-estrela ativo" data-avaliação="1"></li>
+          <li class="icone-estrela" data-avaliação="2"></li>
+          <li class="icone-estrela" data-avaliação="3"></li>
+          <li class="icone-estrela" data-avaliação="4"></li>
+          <li class="icone-estrela" data-avaliação="5"></li>
+        </ul>
+        <script>
+          var stars = document.querySelectorAll('.icone-estrela');
+
+          document.addEventListener('click', function (e) {
+            var classStar = e.target.classList;
+            if (!classStar.contains('ativo')) {
+              stars.forEach(function (star) {
+                star.classList.remove('ativo');
+              });
+              classStar.add('ativo')
+              console.log(e.target.getAttribute('data-avaliação'))
+            }
+
+          })
+        </script>
+
+      </div>
+      
+      <div class="media-semana">
+        <h2>Média da semana</h2>
+        <h3>Saldo Play Court
+        </h3>
+        <h3> R$: 30,00</h3>
+      </div>
+      
+      <div class="reservas-semana">
+        <div class="reservas">
+          <div class="area-graf1">
+            <h2>Reservas da semana</h2>
+            <div class="graf">
+              <div>
+                <canvas id="myChart"></canvas>
+              </div>
+
+
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+              <script>
+
+                const ctx = document.getElementById('myChart');
+
+                new Chart(ctx, {
+                  type: 'bar',
+                  data: {
+
+                    labels: ['Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb', 'Dom'],
+                    datasets: [{
+                      label: 'Número de votos',
+                      data: [12, 19, 3, 5, 2, 3, 6],
+                      borderWidth: 1,
+                      backgroundColor: '#f8d000',
+                      borderColor: '#ffffff',
+
+                    }]
+                  },
+                  options: {
+                    scales: {
+                      y: {
+                        beginAtZero: true
+                      }
+                    }
+                  }
+                });
+              </script>
+
+
+            </div>
+
+          </div>
+         
+              <div class="area-graf2">
+            <h2 id="q2">Quadras</h2>
+            
+            <div class="graf2">
+
+            <div>
+
+              <canvas id="myChart2"></canvas>
+            </div>
+            <script>
+              const ctx2 = document.getElementById('myChart2');
+
+              new Chart(ctx2, {
+                type: 'bar',
+                data: {
+
+                  labels: ['Quadra 1', 'Quadra 2', 'Quadra 3',],
+                  datasets: [{
+                    label: 'Número de votos',
+                    data: [10, 1, 6,],
+                    borderWidth: 1,
+                    backgroundColor: '#f8d000',
+                    borderColor: '#ffffff',
+
+                  }]
+                },
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true
+                    }
+                  }
+                }
+              });
+            </script>
+
+          </div>
+        </div>
+        
+  
+    </div>
+
+      <div class="pub-alv-esp">
+        <div class="pub-alv">
+          <h2>Público alvo</h2>
+          <div>
+            <canvas id="myChart3"></canvas>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+          <script>
+            const ctx3 = document.getElementById('myChart3');
+         
+            new Chart(ctx3, {
+              type: 'pie',
+              data: {
+                
+                labels: ['20 anos', '25 anos', '30anos', '35 anos'],
+                datasets: [{
+                  label: 'número de Votos',
+                  data: [12, 19, 3, 5,],
+                  borderWidth: 2,
+                  backgroundColor: [
+                     '#214cce',
+                     '#f8d000',
+                     '#d7d7d7',
+                     '#ffffff',
+                ]
+                 
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+        </div>
+
+      </div>
+      <div class="pub-alv-esp-2">
+        <div class="pub-alv-2">
+          <h2>Esporte</h2>
+          <div>
+            <canvas id="myChart4"></canvas>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+          <script>
+            const ctx4 = document.getElementById('myChart4');
+         
+            new Chart(ctx4, {
+              type: 'pie',
+              data: {
+                labels: ['Basquete', 'Volei', 'Futebol', 'Futsal'],
+                datasets: [{
+                  label: 'Número de Votos',
+                  data: [5, 13, 7, 1,],
+                  borderWidth: 1,
+                  backgroundColor: [
+                     '#214cce',
+                     '#f8d000',
+                     '#d7d7d7',
+                     '#ffffff',
+                ]
+                }]
+              },
+              options: {
+                scales: {
+                  y: {
+                    beginAtZero: true
+                  }
+                }
+              }
+            });
+          </script>
+        </div>
+
+      </div>
+    
+
+  </div>
+</div>
+</body>
+
+</html>
